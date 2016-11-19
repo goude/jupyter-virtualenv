@@ -17,6 +17,7 @@ $PIP_CMD install sympy scipy seaborn pandas jupyter
 $PIP_CMD install bokeh
 $PIP_CMD install scikit-learn
 $PIP_CMD install jupyterhub
+$PIP_CMD install yapf # python formatting
 
 # swagger client
 $PIP_CMD install bravado
@@ -33,8 +34,8 @@ $PIP_CMD install jupyter_nbextensions_configurator
 jupyter nbextensions_configurator enable --sys-prefix
 
 # vim key bindings - https://github.com/lambdalisue/jupyter-vim-binding/wiki/Installation
-mkdir -p $(jupyter --data-dir)/nbextensions
-cd $(jupyter --data-dir)/nbextensions
+mkdir -p "$(jupyter --data-dir)/nbextensions"
+cd "$(jupyter --data-dir)/nbextensions" || exit
 git clone https://github.com/lambdalisue/jupyter-vim-binding vim_binding
 jupyter nbextension enable vim_binding/vim_binding --sys-prefix
 
