@@ -8,6 +8,7 @@ source venv/bin/activate
 
 pip install numpy
 pip install sympy scipy seaborn pandas jupyter
+pip install bokeh
 pip install scikit-learn
 
 deactivate
