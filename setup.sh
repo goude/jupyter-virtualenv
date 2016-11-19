@@ -6,26 +6,30 @@ pyvenv venv
 
 source venv/bin/activate
 
+PIP_CMD="$PIP_CMD --no-cache-dir"
+
+$PIP_CMD install --upgrade pip
+
 npm install -g configurable-http-proxy # jupyterhub requirement
 
-pip3 install numpy
-pip3 install sympy scipy seaborn pandas jupyter
-pip3 install bokeh
-pip3 install scikit-learn
-pip3 install jupyterhub
+$PIP_CMD install numpy
+$PIP_CMD install sympy scipy seaborn pandas jupyter
+$PIP_CMD install bokeh
+$PIP_CMD install scikit-learn
+$PIP_CMD install jupyterhub
 
 # swagger client
-pip3 install bravado
+$PIP_CMD install bravado
 
 # interactive widgets, see bokeh example
-pip3 install ipywidgets
+$PIP_CMD install ipywidgets
 jupyter nbextension enable --py widgetsnbextension --sys-prefix
 
 # recommended by vim key bindings for easier setup - https://github.com/ipython-contrib/jupyter_contrib_nbextensions#installation
-pip3 install jupyter_contrib_nbextensions
+$PIP_CMD install jupyter_contrib_nbextensions
 jupyter contrib nbextension install --sys-prefix
 
-pip3 install jupyter_nbextensions_configurator
+$PIP_CMD install jupyter_nbextensions_configurator
 jupyter nbextensions_configurator enable --sys-prefix
 
 # vim key bindings - https://github.com/lambdalisue/jupyter-vim-binding/wiki/Installation
