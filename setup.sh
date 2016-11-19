@@ -6,7 +6,7 @@ pyvenv venv
 
 source venv/bin/activate
 
-PIP_CMD="$PIP_CMD --no-cache-dir"
+PIP_CMD="pip3 --no-cache-dir"
 
 $PIP_CMD install --upgrade pip
 
@@ -36,5 +36,6 @@ jupyter nbextensions_configurator enable --sys-prefix
 mkdir -p $(jupyter --data-dir)/nbextensions
 cd $(jupyter --data-dir)/nbextensions
 git clone https://github.com/lambdalisue/jupyter-vim-binding vim_binding
+jupyter nbextension enable vim_binding/vim_binding --sys-prefix
 
 deactivate
