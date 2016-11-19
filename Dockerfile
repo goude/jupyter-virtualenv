@@ -7,4 +7,4 @@ WORKDIR /home/runcom
 RUN \
   git clone https://github.com/goude/jupyter-virtualenv.git && \
   cd jupyter-virtualenv && \
-  jupyter-virtualenv/setup.sh
+  ./setup.sh
