@@ -17,11 +17,9 @@ pip3 install jupyterhub
 # swagger client
 pip3 install bravado
 
-# TODO: Using --py and --sys-prefix, due to error message in bokeh example. Check why this is needed.
-
 # interactive widgets, see bokeh example
 pip3 install ipywidgets
-jupyter nbextension enable --sys-prefix widgetsnbextension
+jupyter nbextension enable --py widgetsnbextension --sys-prefix
 
 # recommended by vim key bindings for easier setup - https://github.com/ipython-contrib/jupyter_contrib_nbextensions#installation
 pip3 install jupyter_contrib_nbextensions
@@ -31,10 +29,8 @@ pip3 install jupyter_nbextensions_configurator
 jupyter nbextensions_configurator enable --sys-prefix
 
 # vim key bindings - https://github.com/lambdalisue/jupyter-vim-binding/wiki/Installation
+mkdir -p $(jupyter --data-dir)/nbextensions
 cd $(jupyter --data-dir)/nbextensions
 git clone https://github.com/lambdalisue/jupyter-vim-binding vim_binding
-jupyter nbextension enable --sys-prefix vim_binding/vim_binding
-cd -
-#chmod -R go-w vim_binding
 
 deactivate
