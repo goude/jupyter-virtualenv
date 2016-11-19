@@ -21,18 +21,20 @@ pip3 install bravado
 
 # interactive widgets, see bokeh example
 pip3 install ipywidgets
-jupyter nbextension enable --py --sys-prefix widgetsnbextension --user
+jupyter nbextension enable --sys-prefix widgetsnbextension
 
 # recommended by vim key bindings for easier setup - https://github.com/ipython-contrib/jupyter_contrib_nbextensions#installation
 pip3 install jupyter_contrib_nbextensions
-jupyter contrib nbextension install --py --sys-prefix
+jupyter contrib nbextension install --sys-prefix
 
 pip3 install jupyter_nbextensions_configurator
-jupyter nbextensions_configurator enable --py --sys-prefix
+jupyter nbextensions_configurator enable --sys-prefix
 
 # vim key bindings - https://github.com/lambdalisue/jupyter-vim-binding/wiki/Installation
-git clone https://github.com/lambdalisue/jupyter-vim-binding $(jupyter --data-dir)/nbextensions/vim_binding
-jupyter nbextension enable --py --sys-prefix vim_binding/vim_binding
+cd $(jupyter --data-dir)/nbextensions
+git clone https://github.com/lambdalisue/jupyter-vim-binding vim_binding
+jupyter nbextension enable --sys-prefix vim_binding/vim_binding
+cd -
 #chmod -R go-w vim_binding
 
 deactivate
