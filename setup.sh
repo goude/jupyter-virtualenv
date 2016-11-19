@@ -6,9 +6,12 @@ pyvenv venv
 
 source venv/bin/activate
 
-pip install numpy
-pip install sympy scipy seaborn pandas jupyter
-pip install bokeh
-pip install scikit-learn
+npm install -g configurable-http-proxy
+
+pip3 install numpy
+pip3 install sympy scipy seaborn pandas jupyter
+pip3 install bokeh
+pip3 install scikit-learn
+pip3 install jupyterhub
 
 deactivate
