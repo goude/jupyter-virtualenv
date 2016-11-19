@@ -14,4 +14,6 @@ pip3 install bokeh
 pip3 install scikit-learn
 pip3 install jupyterhub
 
+pip3 install bravado # Swagger client
+
 deactivate
