@@ -18,9 +18,9 @@ $PIP_CMD install bokeh
 $PIP_CMD install scikit-learn
 $PIP_CMD install jupyterhub
 $PIP_CMD install yapf # python formatting
+$PIP_CMD install bravado # swagger client
 
-# swagger client
-$PIP_CMD install bravado
+# jupyter stuff
 
 # interactive widgets, see bokeh example
 $PIP_CMD install ipywidgets
@@ -33,10 +33,14 @@ jupyter contrib nbextension install --sys-prefix
 $PIP_CMD install jupyter_nbextensions_configurator
 jupyter nbextensions_configurator enable --sys-prefix
 
+# https://github.com/dunovank/jupyter-themes
+$PIP_CMD install jupyterthemes
+
 # vim key bindings - https://github.com/lambdalisue/jupyter-vim-binding/wiki/Installation
 mkdir -p "$(jupyter --data-dir)/nbextensions"
 cd "$(jupyter --data-dir)/nbextensions" || exit
 git clone https://github.com/lambdalisue/jupyter-vim-binding vim_binding
 jupyter nbextension enable vim_binding/vim_binding --sys-prefix
+# cd back if more stuff added below!
 
 deactivate
