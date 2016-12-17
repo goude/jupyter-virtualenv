@@ -12,4 +12,4 @@ echo "Applying [fulhack] colorfix..."
 sed -i.bak 's/efefef/f8f8f8/g' ~/.jupyter/custom/custom.css
 
 echo "Starting Jupyter..."
-jupyter notebook --ip='*' --no-browser
+jupyter notebook --ip='*' --no-browser --NotebookApp.token=''
