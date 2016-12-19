@@ -5,4 +5,11 @@ JUPYTER_VENV_DATA_DIR=$JUPYTER_VENV_DIR/data
 source $JUPYTER_VENV_DIR/venv/bin/activate
 cd $JUPYTER_VENV_DATA_DIR
 
-jupyter notebook --ip='*' --no-browser
+echo "Setting theme..."
+jt -f inputmono -fs 12 -nf opensans -tf rasaserif -tfs 18 -vim -t grade3 -cellw 1100
+
+echo "Applying [fulhack] colorfix..."
+sed -i.bak 's/efefef/f8f8f8/g' ~/.jupyter/custom/custom.css
+
+echo "Starting Jupyter..."
+jupyter notebook --ip='*' --no-browser --NotebookApp.token=''

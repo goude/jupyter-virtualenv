@@ -21,9 +21,15 @@ $PIP_CMD install yapf # python formatting
 $PIP_CMD install pillow # imaging
 $PIP_CMD install bravado # swagger client
 $PIP_CMD install requests # imaging
+$PIP_CMD install folium # maps
+$PIP_CMD install sas7bdat # SAS reader
+$PIP_CMD install geocoder
+$PIP_CMD install datapackage
 #$PIP_CMD install BeautifulSoup
 
 # jupyter stuff
+$PIP_CMD install bash_kernel
+python -m bash_kernel.install
 
 # interactive widgets, see bokeh example
 $PIP_CMD install ipywidgets
