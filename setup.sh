@@ -28,6 +28,8 @@ $PIP_CMD install datapackage
 #$PIP_CMD install BeautifulSoup
 
 # jupyter stuff
+$PIP_CMD install bash_kernel
+python -m bash_kernel.install
 
 # interactive widgets, see bokeh example
 $PIP_CMD install ipywidgets
