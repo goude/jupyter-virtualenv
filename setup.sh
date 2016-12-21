@@ -25,6 +25,7 @@ $PIP_CMD install folium # maps
 $PIP_CMD install sas7bdat # SAS reader
 $PIP_CMD install geocoder
 $PIP_CMD install datapackage
+$PIP_CMD install pyfiglet
 #$PIP_CMD install BeautifulSoup
 
 # jupyter stuff
