@@ -28,6 +28,11 @@ $PIP_CMD install datapackage
 $PIP_CMD install pyfiglet
 $PIP_CMD install matplotlib-venn
 $PIP_CMD install plotly
+$PIP_CMD install wordcloud
+$PIP_CMD install nltk
+$PIP_CMD install vincent
+$PIP_CMD install pandas_datareader
+
 #$PIP_CMD install BeautifulSoup
 
 # jupyter stuff
