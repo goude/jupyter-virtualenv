@@ -32,6 +32,7 @@ $PIP_CMD install wordcloud
 $PIP_CMD install nltk # natural language toolkit
 $PIP_CMD install vincent
 $PIP_CMD install pandas_datareader
+$PIP_CMD install pyfiglet
 
 $PIP_CMD install pypdf2
 $PIP_CMD install pdftables.six
