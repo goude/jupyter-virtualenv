@@ -25,9 +25,18 @@ $PIP_CMD install folium # maps
 $PIP_CMD install sas7bdat # SAS reader
 $PIP_CMD install geocoder
 $PIP_CMD install datapackage
-$PIP_CMD install pyfiglet
+$PIP_CMD install pyfigleti # ascii banners
 $PIP_CMD install matplotlib-venn
 $PIP_CMD install plotly
+$PIP_CMD install wordcloud
+$PIP_CMD install nltk # natural language toolkit
+$PIP_CMD install vincent
+$PIP_CMD install pandas_datareader
+$PIP_CMD install pyfiglet
+
+$PIP_CMD install pypdf2
+$PIP_CMD install pdftables.six
+
 #$PIP_CMD install BeautifulSoup
 
 # jupyter stuff
