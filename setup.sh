@@ -61,7 +61,9 @@ $PIP_CMD install jupyterthemes
 mkdir -p "$(jupyter --data-dir)/nbextensions"
 cd "$(jupyter --data-dir)/nbextensions" || exit
 git clone https://github.com/lambdalisue/jupyter-vim-binding vim_binding
-jupyter nbextension enable vim_binding/vim_binding --sys-prefix
+# vim key bindings enabled via start script instead
+#jupyter nbextension enable vim_binding/vim_binding --sys-prefix
+
 # cd back if more stuff added below!
 
 deactivate
