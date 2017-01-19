@@ -37,6 +37,8 @@ $PIP_CMD install pyfiglet
 $PIP_CMD install pypdf2
 $PIP_CMD install pdftables.six
 
+$PIP_CMD install jsontableschema-pandas
+
 #$PIP_CMD install BeautifulSoup
 
 # jupyter stuff
