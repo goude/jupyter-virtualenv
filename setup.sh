@@ -25,7 +25,7 @@ $PIP_CMD install folium # maps
 $PIP_CMD install sas7bdat # SAS reader
 $PIP_CMD install geocoder
 $PIP_CMD install datapackage
-$PIP_CMD install pyfigleti # ascii banners
+$PIP_CMD install pyfiglet # ascii banners
 $PIP_CMD install matplotlib-venn
 $PIP_CMD install plotly
 $PIP_CMD install wordcloud
@@ -36,6 +36,7 @@ $PIP_CMD install pyfiglet
 $PIP_CMD install jsontableschema-pandas
 $PIP_CMD install JayDeBeApi3
 $PIP_CMD install jellyfish # phonetic/approximate string matching
+$PIP_CMD install gensim
 
 # jupyter stuff
 $PIP_CMD install bash_kernel
