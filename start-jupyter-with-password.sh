@@ -8,6 +8,8 @@ cd $JUPYTER_VENV_DATA_DIR
 echo "Please specify a new password for this Jupyter session."
 jupyterpwd="$(python -c 'from IPython.lib import passwd; print(passwd());')"
 
+jt -r # reset jt
+
 # Simple check: if any arguments, launch Notebook in vim mode.
 if [ $# -ne 0 ]
   then
