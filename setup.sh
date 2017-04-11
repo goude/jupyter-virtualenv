@@ -34,7 +34,7 @@ $PIP_CMD install vincent
 $PIP_CMD install pandas_datareader
 $PIP_CMD install pyfiglet
 $PIP_CMD install jsontableschema-pandas
-$PIP_CMD install JayDeBeApi3
+$PIP_CMD install jaydebeapi
 $PIP_CMD install jellyfish # phonetic/approximate string matching
 $PIP_CMD install gensim
 
