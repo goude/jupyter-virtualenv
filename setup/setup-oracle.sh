@@ -1,5 +1,5 @@
 #!/bin/bash
-source venv/bin/activate
+source ../venv/bin/activate
 source oracle-environment
 
 PIP_CMD="pip3 --no-cache-dir"
