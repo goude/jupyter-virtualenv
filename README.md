@@ -1,13 +1,18 @@
 # jupyter-virtualenv
 
 This is a huge and opinionized docker container for running Jupyter notebooks.
+See `setup.sh` for an idea of what's included out-of-the-box.
 
-Vim keybindings are available but not enabled by default, see `start-jupyter.sh` for activation instructions.
+Username `runcom`, password `runcom`.
 
-Usage example:
+Usage examples:
 
 ```sh
-docker run \
+$ docker run -t -i -p 8888:8888 goude/jupyter-virtualenv /home/runcom/jupyter-virtualenv/start-jupyter.sh
+```
+
+```sh
+$ docker run \
   -t -i \
   -p 8888:8888 \
   -v $HOME/mynotebooks:/home/runcom/jupyter-virtualenv/data/mynotebooks \
@@ -15,3 +20,7 @@ docker run \
   --rm \
   goude/jupyter-virtualenv /home/runcom/jupyter-virtualenv/start-jupyter.sh
 ```
+
+After running one of the above commands, Jupyter will be available at http://localhost:8888
+
+Vim keybindings for Jupyter are available but not enabled by default, see `start-jupyter.sh` for activation instructions.
