@@ -5,7 +5,10 @@
 #pyvenv venv
 #source venv/bin/activate
 
+export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
 pyenv virtualenv 3.6.1 pyenv-jupyter
 pyenv activate pyenv-jupyter
 
