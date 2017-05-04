@@ -2,9 +2,12 @@
 
 # See http://bikulov.org/blog/2015/11/07/install-jupyter-notebook-and-scientific-environment-in-ubuntu-14-dot-04-with-python-3/
 
-pyvenv venv
+#pyvenv venv
+#source venv/bin/activate
 
-source venv/bin/activate
+eval "$(pyenv init -)"
+pyenv virtualenv 3.6.1 pyenv-jupyter
+pyenv activate pyenv-jupyter
 
 PIP_CMD="pip3 --no-cache-dir"
 

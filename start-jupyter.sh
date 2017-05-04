@@ -1,8 +1,12 @@
 #!/bin/bash
-JUPYTER_VENV_DIR=$HOME/jupyter-virtualenv
-JUPYTER_VENV_DATA_DIR=$JUPYTER_VENV_DIR/data
+#JUPYTER_VENV_DIR=$HOME/jupyter-virtualenv
+#JUPYTER_VENV_DATA_DIR=$JUPYTER_VENV_DIR/data
+JUPYTER_VENV_DATA_DIR=./data
 
-source $JUPYTER_VENV_DIR/venv/bin/activate
+#source $JUPYTER_VENV_DIR/venv/bin/activate
+eval "$(pyenv init -)"
+pyenv activate pyenv-jupyter
+
 cd $JUPYTER_VENV_DATA_DIR
 
 echo "Please specify a new password for this Jupyter session."

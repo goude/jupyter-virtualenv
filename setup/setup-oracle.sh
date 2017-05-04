@@ -1,6 +1,9 @@
 #!/bin/bash
-source ../venv/bin/activate
+#source ../venv/bin/activate
 source oracle-environment
+
+eval "$(pyenv init -)"
+pyenv activate pyenv-jupyter
 
 PIP_CMD="pip3 --no-cache-dir"
 
