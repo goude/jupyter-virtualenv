@@ -25,7 +25,7 @@ $PIP_CMD install scikit-learn
 $PIP_CMD install jupyterhub
 $PIP_CMD install yapf # python formatting
 $PIP_CMD install pillow # imaging
-$PIP_CMD install bravado # swagger client
+#$PIP_CMD install bravado # swagger client
 $PIP_CMD install requests # imaging
 $PIP_CMD install folium # maps
 $PIP_CMD install sas7bdat # SAS reader
@@ -37,12 +37,12 @@ $PIP_CMD install plotly
 $PIP_CMD install wordcloud
 $PIP_CMD install nltk # natural language toolkit
 $PIP_CMD install vincent
-$PIP_CMD install pandas_datareader
+#$PIP_CMD install pandas_datareader
 $PIP_CMD install pyfiglet
-$PIP_CMD install jsontableschema-pandas
+#$PIP_CMD install jsontableschema-pandas
 $PIP_CMD install jaydebeapi
-$PIP_CMD install jellyfish # phonetic/approximate string matching
-$PIP_CMD install gensim
+#$PIP_CMD install jellyfish # phonetic/approximate string matching
+#$PIP_CMD install gensim
 
 # jupyter stuff
 $PIP_CMD install bash_kernel
