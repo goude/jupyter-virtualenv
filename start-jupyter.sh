@@ -10,7 +10,7 @@ pyenv activate pyenv-jupyter
 cd $JUPYTER_VENV_DATA_DIR
 
 echo "Please specify a new password for this Jupyter session."
-jupyterpwd="$(python -c 'from IPython.lib import passwd; print(passwd());')"
+jupyterpwd="$(python -c 'from notebook.auth import passwd; print(passwd());')"
 
 jt -r # reset jt
 
