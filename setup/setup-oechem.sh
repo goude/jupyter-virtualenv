@@ -1,5 +1,4 @@
 #!/bin/bash
-#source ../venv/bin/activate
 eval "$(pyenv init -)"
 pyenv activate pyenv-jupyter
 

@@ -8,17 +8,7 @@ Username `runcom`, password `runcom`.
 Usage examples:
 
 ```sh
-$ docker run -t -i -p 8888:8888 goude/jupyter-virtualenv /home/runcom/jupyter-virtualenv/start-jupyter.sh
-```
-
-```sh
-$ docker run \
-  -t -i \
-  -p 8888:8888 \
-  -v $HOME/mynotebooks:/home/runcom/jupyter-virtualenv/data/mynotebooks \
-  --name=ephemeric-jupyter-notebook \
-  --rm \
-  goude/jupyter-virtualenv /home/runcom/jupyter-virtualenv/start-jupyter.sh
+$ docker run -t -i -p 8888:8888 -e SHELL=/bin/bash goude/jupyter-virtualenv /bin/bash --login /home/runcom/jupyter-virtualenv/start-jupyter.sh
 ```
 
 After running one of the above commands, Jupyter will be available at http://localhost:8888
