@@ -20,7 +20,7 @@ if [ $# -ne 0 ]
     jupyter nbextension enable vim_binding/vim_binding --sys-prefix
 
     echo "Setting theme..."
-    jt -f inputmono -fs 10 -nf firacode -nfs 12 -tf rasaserif -tfs 14 -vim -t grade3 -cellw 1100
+    jt -f firacode -fs 12 -nf robotosans -nfs 12 -tf loraserif -tfs 14 -vim -t grade3 -cellw 1100
 
     echo "Applying [fulhack] colorfix..."
     sed -i.bak 's/efefef/f8f8f8/g' ~/.jupyter/custom/custom.css
