@@ -31,6 +31,7 @@ $PIP_CMD install nltk # natural language toolkit
 $PIP_CMD install vincent
 $PIP_CMD install pyfiglet
 $PIP_CMD install jaydebeapi
+$PIP_CMD install openpyxl
 
 #$PIP_CMD install bravado # swagger client
 #$PIP_CMD install datapackage
