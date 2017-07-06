@@ -17,6 +17,7 @@ $PIP_CMD install numpy
 $PIP_CMD install sympy scipy seaborn pandas jupyter
 $PIP_CMD install bokeh
 $PIP_CMD install scikit-learn
+$PIP_CMD install tensorflow
 $PIP_CMD install yapf # python formatting
 $PIP_CMD install pillow # imaging
 $PIP_CMD install requests # imaging
@@ -32,6 +33,7 @@ $PIP_CMD install vincent
 $PIP_CMD install pyfiglet
 $PIP_CMD install jaydebeapi
 $PIP_CMD install openpyxl
+$PIP_CMD install arrow # datetime replacement
 
 #$PIP_CMD install bravado # swagger client
 #$PIP_CMD install datapackage
