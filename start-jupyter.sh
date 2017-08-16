@@ -24,6 +24,9 @@ if [ $# -ne 0 ]
 
     echo "Applying [fulhack] colorfix..."
     sed -i.bak 's/efefef/f8f8f8/g' ~/.jupyter/custom/custom.css
+
+    # for now, revert the theme changes
+    jt -r # reset jt
 fi
 
 echo "Starting Jupyter..."
