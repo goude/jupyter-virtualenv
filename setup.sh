@@ -34,6 +34,9 @@ $PIP_CMD install pyfiglet
 $PIP_CMD install jaydebeapi
 $PIP_CMD install openpyxl
 $PIP_CMD install arrow # datetime replacement
+$PIP_CMD install psycopg2
+$PIP_CMD install lesscpy # jupyter warned about this missing package
+
 
 #$PIP_CMD install bravado # swagger client
 #$PIP_CMD install datapackage
