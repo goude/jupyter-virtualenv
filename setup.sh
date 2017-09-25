@@ -35,8 +35,8 @@ $PIP_CMD install jaydebeapi
 $PIP_CMD install openpyxl
 $PIP_CMD install arrow # datetime replacement
 $PIP_CMD install psycopg2
+$PIP_CMD install sqlalchemy
 $PIP_CMD install lesscpy # jupyter warned about this missing package
-
 
 #$PIP_CMD install bravado # swagger client
 #$PIP_CMD install datapackage
@@ -44,8 +44,8 @@ $PIP_CMD install lesscpy # jupyter warned about this missing package
 #$PIP_CMD install jsontableschema-pandas
 #$PIP_CMD install jellyfish # phonetic/approximate string matching
 #$PIP_CMD install gensim
-#npm install -g configurable-http-proxy # jupyterhub requirement
 #$PIP_CMD install jupyterhub
+#npm install -g configurable-http-proxy # jupyterhub requirement
 
 # jupyter stuff
 $PIP_CMD install bash_kernel
