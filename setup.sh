@@ -20,7 +20,7 @@ pyfiglet matplotlib-venn plotly wordcloud \
 nltk vincent pyfiglet jaydebeapi openpyxl \
 arrow psycopg2 sqlalchemy lesscpy ipywidgets \
 jupyter_nbextensions_configurator jupyter_contrib_nbextensions \
-jupyterthemes jupyterlab
+jupyterthemes jupyterlab xlrd
 
 #$PIP_CMD install bravado # swagger client
 #$PIP_CMD install datapackage
