@@ -10,10 +10,10 @@ eval "$(pyenv virtualenv-init -)"
 pyenv virtualenv 3.6.1 pyenv-jupyter
 pyenv activate pyenv-jupyter
 
-PIP_CMD="pip3 --no-cache-dir"
-$PIP_CMD install --upgrade pip
+PIP_CMD="pip3 --no-cache-dir install --upgrade"
+$PIP_CMD pip
 
-$PIP_CMD install numpy sympy scipy seaborn pandas jupyter \
+$PIP_CMD numpy sympy scipy seaborn pandas jupyter \
 bokeh scikit-learn tensorflow yapf \
 pillow requests folium sas7bdat geocoder \
 pyfiglet matplotlib-venn plotly wordcloud \
@@ -30,7 +30,7 @@ jupyterthemes jupyterlab xlrd
 #$PIP_CMD install gensim
 
 # jupyter stuff
-$PIP_CMD install bash_kernel
+$PIP_CMD bash_kernel
 python -m bash_kernel.install
 
 # Important: rehash pyenv to make jupyter command available
