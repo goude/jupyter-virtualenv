@@ -22,12 +22,12 @@ arrow psycopg2 sqlalchemy lesscpy ipywidgets \
 jupyter_nbextensions_configurator jupyter_contrib_nbextensions \
 jupyterthemes jupyterlab xlrd
 
-#$PIP_CMD install bravado # swagger client
-#$PIP_CMD install datapackage
-#$PIP_CMD install pandas_datareader
-#$PIP_CMD install jsontableschema-pandas
-#$PIP_CMD install jellyfish # phonetic/approximate string matching
-#$PIP_CMD install gensim
+#bravado # swagger client
+#datapackage
+#pandas_datareader
+#jsontableschema-pandas
+#jellyfish # phonetic/approximate string matching
+#gensim
 
 # jupyter stuff
 $PIP_CMD bash_kernel
