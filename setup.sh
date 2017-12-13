@@ -20,14 +20,17 @@ pyfiglet matplotlib-venn plotly wordcloud \
 nltk vincent pyfiglet jaydebeapi openpyxl \
 arrow psycopg2 sqlalchemy lesscpy ipywidgets \
 jupyter_nbextensions_configurator jupyter_contrib_nbextensions \
-jupyterthemes jupyterlab xlrd
+jupyterthemes jupyterlab xlrd \
+pandas_datareader \
+jedi flake8 vim-vint yamllint click autopep8 neovim
 
 #bravado # swagger client
 #datapackage
-#pandas_datareader
 #jsontableschema-pandas
 #jellyfish # phonetic/approximate string matching
 #gensim
+
+$PIP_CMD html5lib
 
 # jupyter stuff
 $PIP_CMD bash_kernel
@@ -47,13 +50,11 @@ jupyter nbextensions_configurator enable --sys-prefix
 jupyter serverextension enable --py jupyterlab --sys-prefix
 
 # vim key bindings - https://github.com/lambdalisue/jupyter-vim-binding/wiki/Installation
+# enabled via start script (jupyter nbextension enable vim_binding/vim_binding --sys-prefix)
 mkdir -p "$(jupyter --data-dir)/nbextensions"
 cd "$(jupyter --data-dir)/nbextensions" || exit
 git clone https://github.com/lambdalisue/jupyter-vim-binding vim_binding
-# vim key bindings now enabled via start script
-#jupyter nbextension enable vim_binding/vim_binding --sys-prefix
-
-# Note: must cd back if more stuff added below!
+cd - || exit
 
 # ...and we're done.
 pyenv deactivate

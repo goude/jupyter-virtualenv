@@ -24,7 +24,6 @@ if [ $# -ne 0 ]
 
     echo "Applying [fulhack] colorfix..."
     sed -i.bak 's/efefef/f8f8f8/g' ~/.jupyter/custom/custom.css
-
 fi
 
 echo "Starting Jupyter..."
