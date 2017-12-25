@@ -20,7 +20,7 @@ if [ $# -ne 0 ]
 
     echo "Setting theme..."
     #jt -f firacode -fs 12 -nf robotosans -nfs 12 -tf loraserif -tfs 14 -vim -t grade3 -cellw 1100
-    jt -vim -t grade3 -f firacode -fs 11 -tfs 11 -nfs 11 -cellw 95% -T
+    jt -vim -t grade3 -f firacode -fs 10 -tfs 9 -nfs 9 -dfs 9 -ofs 9 -cellw 95%
 
     echo "Applying [fulhack] colorfix..."
     sed -i.bak 's/efefef/f8f8f8/g' ~/.jupyter/custom/custom.css
