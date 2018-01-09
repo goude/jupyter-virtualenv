@@ -22,7 +22,8 @@ arrow psycopg2 sqlalchemy lesscpy ipywidgets \
 jupyter_nbextensions_configurator jupyter_contrib_nbextensions \
 jupyterthemes jupyterlab xlrd \
 pandas_datareader \
-jedi flake8 vim-vint yamllint click autopep8 neovim
+jedi flake8 vim-vint yamllint click autopep8 neovim \
+qgrid
 
 #bravado # swagger client
 #datapackage
@@ -42,6 +43,9 @@ pyenv rehash
 # interactive widgets, see bokeh example
 jupyter nbextension enable --py widgetsnbextension --sys-prefix
 
+# qgrid
+jupyter nbextension enable --py --sys-prefix qgrid
+
 # recommended by vim key bindings for easier setup - https://github.com/ipython-contrib/jupyter_contrib_nbextensions#installation
 jupyter contrib nbextension install --sys-prefix
 jupyter nbextensions_configurator enable --sys-prefix
@@ -53,6 +57,9 @@ jupyter serverextension enable --py jupyterlab --sys-prefix
 # enabled via start script (jupyter nbextension enable vim_binding/vim_binding --sys-prefix)
 mkdir -p "$(jupyter --data-dir)/nbextensions"
 cd "$(jupyter --data-dir)/nbextensions" || exit
+if [ -d vim_binding ]; then
+  rm -rf vim_binding
+fi
 git clone https://github.com/lambdalisue/jupyter-vim-binding vim_binding
 cd - || exit
 
