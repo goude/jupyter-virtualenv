@@ -1,4 +1,5 @@
-FROM goude/runcom-linux:v3.3.0
+# FROM goude/runcom-linux:v3.3.0
+FROM goude/runcom-linux:latest
 MAINTAINER Daniel Goude <daniel@goude.se>
 
 USER runcom
