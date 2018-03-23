@@ -22,6 +22,7 @@ arrow psycopg2 sqlalchemy lesscpy ipywidgets \
 jupyter_nbextensions_configurator jupyter_contrib_nbextensions \
 jupyterthemes jupyterlab xlrd \
 pandas_datareader \
+ipyvolume bqplot ipythonblocks \
 jedi flake8 vim-vint yamllint click autopep8 neovim \
 qgrid tqdm
 
