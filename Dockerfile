@@ -8,5 +8,6 @@ WORKDIR /home/runcom
 RUN \
   git clone https://github.com/goude/jupyter-virtualenv.git && \
   cd jupyter-virtualenv && \
-  ./setup.sh \
-  ln -s start-jupyter.sh ~/start.sh
+  ./setup.sh && \
+  ln -s start-jupyter.sh ~/start.sh && \
+  echo "jupyter-virtualenv $(date --iso-8601=seconds)" >> /home/runcom/.runcom-log
