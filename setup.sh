@@ -14,7 +14,9 @@ PIP_CMD="pip3 --no-cache-dir install --upgrade"
 $PIP_CMD pip
 
 $PIP_CMD numpy sympy scipy seaborn pandas jupyter \
-bokeh scikit-learn tensorflow yapf \
+bokeh scikit-learn \
+tensorflow \
+yapf \
 pillow requests folium sas7bdat geocoder \
 pyfiglet matplotlib-venn plotly wordcloud \
 nltk vincent pyfiglet jaydebeapi openpyxl \
@@ -54,6 +56,7 @@ jupyter nbextensions_configurator enable --sys-prefix
 
 # alpha version of jupyterlab
 jupyter serverextension enable --py jupyterlab --sys-prefix
+jupyter labextension install jupyterlab_vim
 
 # vim key bindings - https://github.com/lambdalisue/jupyter-vim-binding/wiki/Installation
 # enabled via start script (jupyter nbextension enable vim_binding/vim_binding --sys-prefix)
