@@ -20,7 +20,9 @@ yapf \
 pillow requests folium sas7bdat geocoder \
 pyfiglet matplotlib-venn plotly wordcloud \
 nltk vincent pyfiglet jaydebeapi openpyxl \
-arrow psycopg2 sqlalchemy lesscpy ipywidgets \
+arrow \
+psycopg2-binary \
+sqlalchemy lesscpy ipywidgets \
 jupyter_nbextensions_configurator jupyter_contrib_nbextensions \
 jupyterthemes jupyterlab xlrd \
 pandas_datareader \
