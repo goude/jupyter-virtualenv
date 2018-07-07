@@ -28,7 +28,7 @@ jupyterthemes jupyterlab xlrd \
 pandas_datareader \
 ipyvolume bqplot ipythonblocks \
 jedi flake8 vim-vint yamllint click autopep8 neovim \
-qgrid tqdm pytest
+qgrid tqdm pytest regex
 
 
 #bravado # swagger client
