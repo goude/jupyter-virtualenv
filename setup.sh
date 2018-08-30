@@ -25,7 +25,7 @@ psycopg2-binary \
 sqlalchemy lesscpy ipywidgets \
 jupyter_nbextensions_configurator jupyter_contrib_nbextensions \
 jupyterthemes \
-jupyterlab>=0.33.0,<0.33.99 \
+jupyterlab\>=0.33.0,\<0.33.99 \
 xlrd \
 pandas_datareader \
 ipyvolume bqplot ipythonblocks \
