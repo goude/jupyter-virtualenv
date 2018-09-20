@@ -18,4 +18,4 @@ echo "Please specify a new password for this Jupyterlab session."
 jupyterpwd="$(python -c 'from notebook.auth import passwd; print(passwd());')"
 
 echo "Starting Jupyterlab..."
-jupyter lab --ip='*' --no-browser --NotebookApp.password="$jupyterpwd"
+jupyter lab --ip='0.0.0.0' --no-browser --NotebookApp.password="$jupyterpwd"

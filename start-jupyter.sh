@@ -34,4 +34,4 @@ if [ $# -ne 0 ]
 fi
 
 echo "Starting Jupyter..."
-jupyter notebook --ip='*' --no-browser --NotebookApp.password="$jupyterpwd"
+jupyter notebook --ip='0.0.0.0' --no-browser --NotebookApp.password="$jupyterpwd"
