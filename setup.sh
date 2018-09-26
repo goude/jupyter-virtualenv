@@ -7,6 +7,7 @@ export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+source "$HOME/.homesick/repos/runcom/localenv"
 pyenv virtualenv "$RUNCOM_PYENV_PYTHON3_VERSION" pyenv-jupyter
 pyenv activate pyenv-jupyter
 
