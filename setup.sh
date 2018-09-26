@@ -7,7 +7,7 @@ export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
-pyenv virtualenv 3.6.4 pyenv-jupyter
+pyenv virtualenv "$PYENV_PYTHON3_VERSION" pyenv-jupyter
 pyenv activate pyenv-jupyter
 
 PIP_CMD="pip3 --no-cache-dir install --upgrade"
