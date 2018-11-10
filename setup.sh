@@ -14,25 +14,52 @@ pyenv activate pyenv-jupyter
 PIP_CMD="pip3 --no-cache-dir install --upgrade"
 $PIP_CMD pip
 
-$PIP_CMD numpy sympy scipy seaborn pandas jupyter \
-bokeh scikit-learn \
-tensorflow \
-yapf \
-pillow requests folium sas7bdat geocoder \
-pyfiglet matplotlib-venn plotly wordcloud \
-nltk vincent pyfiglet jaydebeapi openpyxl \
-arrow \
-psycopg2-binary \
-sqlalchemy lesscpy ipywidgets \
-jupyter_nbextensions_configurator jupyter_contrib_nbextensions \
-jupyterthemes \
-jupyterlab\>=0.33.0,\<0.33.99 \
-xlrd \
-pandas_datareader \
-ipyvolume bqplot ipythonblocks \
-jedi flake8 vim-vint yamllint click autopep8 neovim \
-qgrid tqdm pytest regex
+#jupyterlab\>=0.33.0,\<0.33.99 \
 
+$PIP_CMD numpy sympy scipy seaborn pandas jupyter \
+arrow \
+autopep8 \
+bokeh \
+bqplot ipythonblocks \
+click \
+flake8 \
+folium \
+geocoder \
+ipyvolume \
+ipywidgets \
+jaydebeapi \
+jedi \
+jupyter_contrib_nbextensions \
+jupyter_nbextensions_configurator \
+jupyterlab \
+jupyterthemes \
+keras \
+lesscpy \
+matplotlib-venn \
+neovim \
+nltk \
+openpyxl \
+pandas_datareader \
+pillow \
+plotly \
+psycopg2-binary \
+pyfiglet \
+pyfiglet \
+pytest \
+qgrid \
+regex \
+requests \
+sas7bdat \
+scikit-learn \
+sqlalchemy \
+tensorflow \
+tqdm \
+vim-vint \
+vincent \
+wordcloud \
+xlrd \
+yamllint \
+yapf
 
 #bravado # swagger client
 #datapackage
@@ -61,7 +88,32 @@ jupyter nbextensions_configurator enable --sys-prefix
 
 # alpha version of jupyterlab
 jupyter serverextension enable --py jupyterlab --sys-prefix
+
 jupyter labextension install jupyterlab_vim
+
+jupyter labextension install @mflevine/jupyterlab_html
+#jupyter labextension install @jupyterlab/latex
+#jupyter labextension install @jpmorganchase/perspective-jupyterlab
+#jupyter labextension install @jupyter-widgets/jupyterlab-manager
+#jupyter labextension install @jupyterlab/plotly-extension
+#jupyter labextension install ipysheet
+#jupyter labextension install jupyterlab-drawio
+#jupyter labextension install jupyterlab-flake8
+#jupyter labextension install jupyterlab_bokeh
+#jupyter labextension install lineup_widget
+#jupyter labextension install plotlywidget
+#jupyter labextension install qgrid
+
+#$PIP_CMD pylantern
+#jupyter labextension install pylantern
+#jupyter serverextension enable --py lantern
+
+#$PIP_CMD jupyterlab-git
+#jupyter labextension install @jupyterlab/git
+#jupyter serverextension enable --py jupyterlab_git
+
+#$PIP_CMD jupyterlab-discovery
+
 
 # vim key bindings - https://github.com/lambdalisue/jupyter-vim-binding/wiki/Installation
 # enabled via start script (jupyter nbextension enable vim_binding/vim_binding --sys-prefix)
@@ -74,4 +126,5 @@ git clone https://github.com/lambdalisue/jupyter-vim-binding vim_binding
 cd - || exit
 
 # ...and we're done.
+pyenv rehash
 pyenv deactivate
