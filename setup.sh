@@ -3,16 +3,18 @@
 # Sources
 # - http://bikulov.org/blog/2015/11/07/install-jupyter-notebook-and-scientific-environment-in-ubuntu-14-dot-04-with-python-3/
 
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-
+source "$HOME/.homesick/repos/runcom/rc.pyenv"
 source "$HOME/.homesick/repos/runcom/localenv"
-pyenv virtualenv "$RUNCOM_PYENV_PYTHON3_VERSION" pyenv-jupyter
-pyenv activate pyenv-jupyter
 
-PIP_CMD="pip3 --no-cache-dir install --upgrade"
-$PIP_CMD pip
+$RUNCOM_PIPENV_CMD --python 3
+
+# From https://pip.pypa.io/en/stable/user_guide/#configuration :
+# To enable the boolean options --no-compile and --no-cache-dir, falsy
+# values have to be used:
+export PIP_NO_CACHE_DIR=false
+PIP_CMD="$RUNCOM_PIPENV_CMD install --skip-lock"
+#PIP_CMD="pip3 --no-cache-dir install --upgrade"
+#$PIP_CMD pip
 
 #jupyterlab\>=0.33.0,\<0.33.99 \
 
@@ -126,5 +128,5 @@ git clone https://github.com/lambdalisue/jupyter-vim-binding vim_binding
 cd - || exit
 
 # ...and we're done.
-pyenv rehash
-pyenv deactivate
+#pyenv rehash
+$RUNCOM_PIPENV_CMD run pyenv rehash
