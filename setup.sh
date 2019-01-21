@@ -76,24 +76,26 @@ $PIP_CMD bash_kernel
 python -m bash_kernel.install
 
 # Important: rehash pyenv to make jupyter command available
-pyenv rehash
+#pyenv rehash
+$RUNCOM_PIPENV_CMD run pyenv rehash
 
+$JUPYTER_CMD="$RUNCOM_PIPENV_CMD run jupyter"
 # interactive widgets, see bokeh example
-jupyter nbextension enable --py widgetsnbextension --sys-prefix
+$JUPYTER_CMD nbextension enable --py widgetsnbextension --sys-prefix
 
 # qgrid
-jupyter nbextension enable --py --sys-prefix qgrid
+$JUPYTER_CMD nbextension enable --py --sys-prefix qgrid
 
 # recommended by vim key bindings for easier setup - https://github.com/ipython-contrib/jupyter_contrib_nbextensions#installation
-jupyter contrib nbextension install --sys-prefix
-jupyter nbextensions_configurator enable --sys-prefix
+$JUPYTER_CMD contrib nbextension install --sys-prefix
+$JUPYTER_CMD nbextensions_configurator enable --sys-prefix
 
 # alpha version of jupyterlab
-jupyter serverextension enable --py jupyterlab --sys-prefix
+$JUPYTER_CMD serverextension enable --py jupyterlab --sys-prefix
 
-jupyter labextension install jupyterlab_vim
+$JUPYTER_CMD labextension install jupyterlab_vim
 
-jupyter labextension install @mflevine/jupyterlab_html
+$JUPYTER_CMD labextension install @mflevine/jupyterlab_html
 #jupyter labextension install @jupyterlab/latex
 #jupyter labextension install @jpmorganchase/perspective-jupyterlab
 #jupyter labextension install @jupyter-widgets/jupyterlab-manager
@@ -119,8 +121,8 @@ jupyter labextension install @mflevine/jupyterlab_html
 
 # vim key bindings - https://github.com/lambdalisue/jupyter-vim-binding/wiki/Installation
 # enabled via start script (jupyter nbextension enable vim_binding/vim_binding --sys-prefix)
-mkdir -p "$(jupyter --data-dir)/nbextensions"
-cd "$(jupyter --data-dir)/nbextensions" || exit
+mkdir -p "$($JUPYTER_CMD --data-dir)/nbextensions"
+cd "$($JUPYTER_CMD --data-dir)/nbextensions" || exit
 if [ -d vim_binding ]; then
   rm -rf vim_binding
 fi
