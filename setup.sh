@@ -14,59 +14,59 @@ pyenv virtualenv 3.6.6 pyenv-jupyter
 pyenv activate pyenv-jupyter
 
 PIP_CMD="pip3 --no-cache-dir install --upgrade"
-$PIP_CMD pip==18
+$PIP_CMD pip==18.1
 
-#jupyterlab\>=0.33.0,\<0.33.99 \
 # bqplot ipythonblocks \
-#folium \
-#geocoder \
-#ipyvolume \
+##sympy \
 #arrow \
 #autopep8 \
 #bokeh \
 #click \
 #flake8 \
+#folium \
+#geocoder \
+#ipyvolume \
+#ipywidgets \
+#jedi \
+#jupyter \
+#jupyter_contrib_nbextensions \
+#jupyter_nbextensions_configurator \
+#jupyterlab\>=0.33.0,\<0.33.99 \
+#jupyterthemes \
 #keras \
 #lesscpy \
 #matplotlib-venn \
 #neovim \
+#nltk \
+#numpy \
+#openpyxl \
+#pandas \
 #pandas_datareader \
 #pillow \
 #plotly \
 #pyfiglet \
+#pytest \
+#qgrid \
+#regex \
+#sas7bdat \
+#scikit-learn \
+#scipy \
+#seaborn \
+#sqlalchemy \
 #tensorflow \
+#tqdm \
 #vim-vint \
 #vincent \
 #wordcloud \
-#ipywidgets \
-#jupyter_contrib_nbextensions \
-#jupyter_nbextensions_configurator \
-#jedi \
-#nltk \
-#qgrid \
-#regex \
-#scikit-learn \
-#sqlalchemy \
-#yamllint \
-#jupyterthemes \
-#yapf
-#numpy \
-##sympy \
-#scipy \
-#seaborn \
-#pandas \
-#jupyter \
-#jaydebeapi \
-#openpyxl \
-#pytest \
-#sas7bdat \
-#tqdm \
 #xlrd \
+#yamllint \
+#yapf
 
 $PIP_CMD \
 psycopg2-binary \
 requests \
 jupyterlab \
+jaydebeapi \
 pandas
 
 #bravado # swagger client
