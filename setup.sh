@@ -51,7 +51,6 @@ $PIP_CMD pip==18.1
 #sas7bdat \
 #scikit-learn \
 #scipy \
-#seaborn \
 #sqlalchemy \
 #tensorflow \
 #tqdm \
@@ -63,10 +62,11 @@ $PIP_CMD pip==18.1
 #yapf
 
 $PIP_CMD \
+jaydebeapi \
+jupyterlab \
 psycopg2-binary \
 requests \
-jupyterlab \
-jaydebeapi \
+seaborn \
 pandas
 
 #bravado # swagger client
