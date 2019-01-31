@@ -39,7 +39,6 @@ $PIP_CMD pip==18.1
 #neovim \
 #nltk \
 #numpy \
-#openpyxl \
 #pandas \
 #pandas_datareader \
 #pillow \
@@ -48,16 +47,12 @@ $PIP_CMD pip==18.1
 #pytest \
 #qgrid \
 #regex \
-#sas7bdat \
 #scikit-learn \
 #scipy \
-#sqlalchemy \
 #tensorflow \
-#tqdm \
 #vim-vint \
 #vincent \
 #wordcloud \
-#xlrd \
 #yamllint \
 #yapf
 
@@ -67,6 +62,11 @@ jupyterlab \
 psycopg2-binary \
 requests \
 seaborn \
+openpyxl \
+xlrd \
+tqdm \
+sas7bdat \
+sqlalchemy \
 pandas
 
 #bravado # swagger client
