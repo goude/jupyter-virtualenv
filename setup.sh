@@ -47,7 +47,6 @@ $PIP_CMD pip==18.1
 #pytest \
 #qgrid \
 #regex \
-#scikit-learn \
 #scipy \
 #tensorflow \
 #vim-vint \
@@ -67,6 +66,7 @@ xlrd \
 tqdm \
 sas7bdat \
 sqlalchemy \
+scikit-learn \
 pandas
 
 #bravado # swagger client
