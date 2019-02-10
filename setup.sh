@@ -37,7 +37,6 @@ $PIP_CMD pip==18.1
 #lesscpy \
 #matplotlib-venn \
 #neovim \
-#nltk \
 #numpy \
 #pandas \
 #pandas_datareader \
@@ -67,6 +66,7 @@ tqdm \
 sas7bdat \
 sqlalchemy \
 scikit-learn \
+nltk \
 pandas
 
 #bravado # swagger client
