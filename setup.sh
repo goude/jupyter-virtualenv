@@ -67,6 +67,7 @@ sas7bdat \
 sqlalchemy \
 scikit-learn \
 nltk \
+tornado=5.1.1 \
 pandas
 
 #bravado # swagger client
