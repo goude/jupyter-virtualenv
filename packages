@@ -12,3 +12,5 @@ scikit-learn
 nltk
 tornado==5.1.*
 pandas
+keras
+tensorflow
