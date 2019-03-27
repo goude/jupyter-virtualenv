@@ -1,2 +1,2 @@
-echo "Autoenv: deactivating jupyter-virtualenv virtualenv..."
-pyenv deactivate
+echo "Autoenv: (not really) deactivating jupyter-virtualenv virtualenv..."
+#pyenv deactivate
