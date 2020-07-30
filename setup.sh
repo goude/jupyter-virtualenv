@@ -8,20 +8,22 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 source "$HOME/.homesick/repos/runcom/localenv"
-pyenv install --skip-existing 3.6.7
+#pyenv install --skip-existing 3.6.7
 pyenv virtualenv-delete --force pyenv-jupyter
-pyenv virtualenv 3.6.7 pyenv-jupyter
+#pyenv virtualenv 3.6.7 pyenv-jupyter
+pyenv virtualenv system pyenv-jupyter
 pyenv activate pyenv-jupyter
 
 PIP_CMD="pip3 --no-cache-dir install --upgrade"
-$PIP_CMD pip==18.1
+#$PIP_CMD pip==18.1
+$PIP_CMD pip wheel
 $PIP_CMD $(cat packages)
 
 # Important: rehash pyenv to make jupyter command available
 pyenv rehash
 
 #jupyter serverextension enable --py jupyterlab --sys-prefix
-jupyter labextension install jupyterlab_vim
+jupyter labextension install @axlair/jupyterlab_vim
 
 pyenv rehash
 pyenv deactivate
