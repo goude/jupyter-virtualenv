@@ -6,3 +6,4 @@ xlrd
 tqdm
 pandas
 scispacy
+black
