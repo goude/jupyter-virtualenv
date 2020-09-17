@@ -8,10 +8,11 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 source "$HOME/.homesick/repos/runcom/localenv"
-#pyenv install --skip-existing 3.6.7
+pyenv install --skip-existing 3.7.9
 pyenv virtualenv-delete --force pyenv-jupyter
-#pyenv virtualenv 3.6.7 pyenv-jupyter
-pyenv virtualenv system pyenv-jupyter
+#pyenv virtualenv system pyenv-jupyter
+pyenv virtualenv 3.7.9 pyenv-jupyter
+
 pyenv activate pyenv-jupyter
 
 PIP_CMD="pip3 --no-cache-dir install --upgrade"
