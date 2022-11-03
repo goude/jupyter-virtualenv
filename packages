@@ -1,9 +1,8 @@
 jupyterlab
+ipython
 requests
 seaborn
 openpyxl
-xlrd
 tqdm
 pandas
-scispacy
 black
