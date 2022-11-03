@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo "Setting up jupyterlab - did you remember to nvm use node?"
-
 python3 -m venv jupyter-venv
 source jupyter-venv/bin/activate
 
